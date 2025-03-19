@@ -1,3 +1,31 @@
 # practicalapp17.1# Practical-App-3
 # Link to the complete Python Notebook
    Dive into a comprehensive Python notebook [https://github.com/HariHebb/practicalapp17.1/blob/main/prompt_III.ipynb] showcasing exploratory data analysis and baseline model generation! Explore multiple classification models tested for accuracy, recall, precision, and F1 score, alongside a detailed comparison of their performance and training time.
+
+# Objective
+Leveraging a UCI dataset on Portuguese bank marketing campaigns [https://archive.ics.uci.edu/dataset/222/bank+marketing], we aim to predict term deposit subscriptions. This project explores Logistic Regression, KNN, Decision Trees, and SVM to determine the best model based on accuracy, recall, precision, F1 score, and training time, ultimately identifying top performer(s) and justifying our selection.
+
+# EDA Summary
+ ## Dataset Overview:
+   Size: 41,118 rows and 21 columns.
+   Data Quality: No NULL values, but "unknown" and "non-existent" values indicate missing data points.
+   Pseudo-Null Values: Predominantly found in "poutcome" (previous campaign outcome) and "default" (credit default status) columns.
+
+## Categorical Column Insights:
+   Seasonal Bias: Data lacks January and February data; sparse in winter months of October, November and December.
+   Education Dominance: College/University degrees are most common education pattern among the cohort.
+   Target Imbalance: "No" dominates "Yes" in the target column.
+   Loan Bias: The cohort contains a small percentage of folks with housing or personal loans.
+   Contact Methods: Primarily cellular, first-time contacts.
+   Previous Campaigns: Mostly non-subscribers.
+   Job Bias: Admin jobs dominate the list
+   Marital Status: A large percentage of cohort are married
+   ### Conclusion
+      The data is overall imbalanced based on observations of various attributes as can be inferred from the above output
+   ### Plots
+   ![image](https://github.com/user-attachments/assets/88361d4f-2ff1-4bac-a9c9-29b558e7be83)
+   ![image](https://github.com/user-attachments/assets/c9d921e4-0690-485c-bd14-38f734fa1084)
+   ![image](https://github.com/user-attachments/assets/d1b56ace-37a4-47ec-bfa6-46998be2d14d)
+
+
+
