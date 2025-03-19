@@ -38,11 +38,11 @@ Leveraging a UCI dataset on Portuguese bank marketing campaigns [https://archive
  ![image](https://github.com/user-attachments/assets/50a0731d-1338-4d2b-a77a-29e6cac3ddcc)
  ### Inferences
    The following columns have a significant impact on whether a client subscribes to a term deposit, with an influence between 0.23 and 0.35 on the target column:
-      Previous: Indicates the outcome of previous marketing campaigns.
-      Emp.var.rate: Represents the employment variation rate.
-      Euribor3m: Reflects the Euribor 3-month rate.
-      Pdays: Denotes the number of days since the last contact.
-      Nr.employed: Refers to the number of employees in the bank.
+      #### Previous: Indicates the outcome of previous marketing campaigns.
+      #### Emp.var.rate: Represents the employment variation rate.
+      #### Euribor3m: Reflects the Euribor 3-month rate.
+      #### Pdays: Denotes the number of days since the last contact.
+      #### Nr.employed: Refers to the number of employees in the bank.
 ### Impact on Subscription Chances:
    #### Positive Factors:
       Duration & Previous: The more successful previous marketing outcomes, the higher the likelihood of subscribing to a term deposit. The higher the duration of interactions the higher the possibility of subscription
