@@ -12,20 +12,26 @@ Leveraging a UCI dataset on Portuguese bank marketing campaigns [https://archive
    Pseudo-Null Values: Predominantly found in "poutcome" (previous campaign outcome) and "default" (credit default status) columns.
 
 ## Categorical Column Insights:
-   Seasonal Bias: Data lacks January and February data; sparse in winter months of October, November and December.
-   Education Dominance: College/University degrees are most common education pattern among the cohort.
-   Target Imbalance: "No" dominates "Yes" in the target column.
-   Loan Bias: The cohort contains a small percentage of folks with housing or personal loans.
-   Contact Methods: Primarily cellular, first-time contacts.
-   Previous Campaigns: Mostly non-subscribers.
-   Job Bias: Admin jobs dominate the list
-   Marital Status: A large percentage of cohort are married
+   ### Seasonal Bias: Data lacks January and February data; sparse in winter months of October, November and December.
+   ### Education Dominance: College/University degrees are most common education pattern among the cohort.
+   ### Target Imbalance: "No" dominates "Yes" in the target column.
+   ### Loan Bias: The cohort contains a small percentage of folks with housing or personal loans.
+   ### Contact Methods: Primarily cellular, first-time contacts.
+   ### Previous Campaigns: Mostly non-subscribers.
+   ### Job Bias: Admin jobs dominate the list
+   ### Marital Status: A large percentage of cohort are married
    ### Conclusion
       The data is overall imbalanced based on observations of various attributes as can be inferred from the above output
    ### Plots
    ![image](https://github.com/user-attachments/assets/88361d4f-2ff1-4bac-a9c9-29b558e7be83)
    ![image](https://github.com/user-attachments/assets/c9d921e4-0690-485c-bd14-38f734fa1084)
    ![image](https://github.com/user-attachments/assets/d1b56ace-37a4-47ec-bfa6-46998be2d14d)
+   ![image](https://github.com/user-attachments/assets/e22b2cef-ed53-4995-a0cc-7c617f7e776a)
+   ![image](https://github.com/user-attachments/assets/5d1a7914-fe96-4648-86b5-de4b68e9ddb9)
+   ![image](https://github.com/user-attachments/assets/d57f14ca-43bb-4380-83d9-04ea37fd9022)
+
+
+
 
 
 
