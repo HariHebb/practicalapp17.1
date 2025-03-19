@@ -38,17 +38,63 @@ Leveraging a UCI dataset on Portuguese bank marketing campaigns [https://archive
  ![image](https://github.com/user-attachments/assets/50a0731d-1338-4d2b-a77a-29e6cac3ddcc)
  ### Inferences
    The following columns have a significant impact on whether a client subscribes to a term deposit, with an influence between 0.23 and 0.35 on the target column:
-      #### Previous: Indicates the outcome of previous marketing campaigns.
-      #### Emp.var.rate: Represents the employment variation rate.
-      #### Euribor3m: Reflects the Euribor 3-month rate.
-      #### Pdays: Denotes the number of days since the last contact.
-      #### Nr.employed: Refers to the number of employees in the bank.
+      1. Previous: Indicates the outcome of previous marketing campaigns.
+      2. Emp.var.rate: Represents the employment variation rate.
+      3. Euribor3m: Reflects the Euribor 3-month rate.
+      4. Pdays: Denotes the number of days since the last contact.
+      5. Nr.employed: Refers to the number of employees in the bank.
 ### Impact on Subscription Chances:
    #### Positive Factors:
       Duration & Previous: The more successful previous marketing outcomes, the higher the likelihood of subscribing to a term deposit. The higher the duration of interactions the higher the possibility of subscription
 
    #### Negative Factors:
       Emp.var.rate, Euribor3m, Pdays, and Nr.employed: Higher values in these categories decrease the chances of subscribing
+
+# Model Performance without hyperparameter tuning
+![image](https://github.com/user-attachments/assets/b876eff1-cf0d-4eda-9ddb-b53147d9ac9b)
+Analysis Summary
+1. SVM takes the longest time compared to the other 3 models
+2. KNN took the shortest time to complete
+3. Accuracies are fairly similar with Logistic Regression and SVM scoring marginally better on the test accuracy
+4. All the models except decision tree performed better than the baseline model which had a accuracy of 89%
+
+# Model Performance with hyperparameter tuning
+![image](https://github.com/user-attachments/assets/46b1c03d-d8d0-4688-8de8-e082b5a2ade9)
+
+## Time Taken:
+    1. KNN: Fastest with 4.93 seconds.
+    2. Decision Tree: Second fastest with 6.31 seconds.
+    3. Logistic Regression: Takes 39.20 seconds.
+    4. SVM: Slowest with 912.65 seconds.
+## Train Accuracy:
+   1. SVM: Highest with 0.9233.
+   2. Decision Tree: Second highest with 0.9174.
+   3. KNN: 0.9152.
+   4. Logistic Regression: Lowest with 0.9117.
+## Test Accuracy:
+   1. SVM: Highest with 0.9120.
+   2. Logistic Regression: 0.9123 (slightly higher than SVM).
+   3. Decision Tree: 0.9162 (highest among all models).
+   4. KNN: Lowest with 0.9052.
+## Precision:
+   1. SVM: Highest with 0.6772.
+   2. Logistic Regression: 0.6747.
+   3. Decision Tree: 0.6505.
+   4. KNN: Lowest with 0.6480.
+## Recall:
+   1. Decision Tree: Highest with 0.5508.
+   2. SVM: 0.4154.
+   3. Logistic Regression: 0.4240.
+   4. KNN: Lowest with 0.3419.
+## F1 Score:
+   1. Decision Tree: Highest with 0.5965.
+   2. Logistic Regression: 0.5208.
+   3. SVM: 0.5149.
+   4. KNN: Lowest with 0.4477.
+## Conclusion Best Model
+   Based on multiple parameters, Decision Tree appears to be the best model overall: Test Accuracy: Highest among all models (0.9162). Recall: Highest among all models (0.5508). F1 Score: Highest among all models (0.5965). Time Taken: Reasonably fast with 6.31 seconds. However, if speed is a critical factor, KNN might be considered due to its fast training time, though it performs slightly inferior on other metrics. If you prioritize marginal accuracy and precision over speed, SVM could be an option, but its extremely long training time might be a significant drawback.
+
+
 
 
 
